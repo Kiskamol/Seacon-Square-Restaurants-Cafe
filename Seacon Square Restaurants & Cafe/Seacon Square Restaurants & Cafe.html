@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seacon Square : restaurants</title>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/924817144017068032/Nw_k0qAc.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://pbs.twimg.com/profile_images/924817144017068032/Nw_k0qAc.jpg" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.seaconsquare.com/">Main Website</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com/maps/place/Seacon+Square+Srinagarindra/@13.6943348,100.6483001,15z/data=!4m2!3m1!1s0x0:0xecc3d0841afbf60c?sa=X&ved=2ahUKEwjOlbCBqKfvAhW6wjgGHeRBAn0Q_BIwEnoECCAQBQ">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#heading">Restaurant & Cafe</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  </div>
+  <br>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://1000logos.net/wp-content/uploads/2017/08/Dunkin-Donuts-Logo.png" 
+            class="d-block w-100 ">
+          </div>
+          <div class="carousel-item">
+            <img src='https://article.redprice.co/wp-content/uploads/2017/09/logocover.jpg' class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="https://16jhl82mq2imp4wet2y0c7og-wpengine.netdna-ssl.com/wp-content/uploads/2015/06/Auntie-Annes-Soft-Prezel-Maker-Logo-RBMM.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://download.logo.wine/logo/Au_Bon_Pain/Au_Bon_Pain-Logo.wine.png" class="d-block w-100" >
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+  <main>  
+    <div class="container">
+      <p class="display-5" id = 'heading'>
+      </p>
+    </div>
+    <br>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+          <div class="col">
+            <div class="card shadow-sm ">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                <rect width="100%" height="100%" fill="#55595c"/>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted" id="abp"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src=""
+                id = 'image-thumbnail'
+                width="100%" height="205"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title></title>
+                  <h4 class="nameTH"></h4>
+                  <h5 class="nameEng"></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="" target="_blank" rel="noopener noreferrer" id = 'view'> View</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"
+                    id = 'comtact'>Contact</button>
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <p class="float-end"> <a href="#"><img src="https://pbs.twimg.com/profile_images/924817144017068032/Nw_k0qAc.jpg" alt=""></a></p>
+    <p>&copy; 2017–2021 Seaconsquare &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>

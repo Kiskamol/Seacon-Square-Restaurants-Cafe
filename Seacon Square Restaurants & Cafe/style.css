@@ -1,0 +1,57 @@
+.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			user-select: none;
+		}
+
+		.carousel-item img {
+			height: 650px;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		#abp {
+			font-size: 0.9rem;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		header nav {
+			background-color: black;
+		}
+
+		header nav img,
+		footer img {
+			height: 40px;
+		}
+
+		@media (min-width: 375px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		small {
+			font-size: 1rem;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		header nav {
+			background-color: black;
+		}
+
+		header nav img,
+		footer img {
+			height: 40px;
+		}
